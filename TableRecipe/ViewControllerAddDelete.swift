@@ -1,18 +1,9 @@
 import UIKit
 
 class ViewControllerAddDelete: UITableViewController {
-    // MARK: - Types
-    struct ViewModel {
-        let title : String
-        let subtitle : String        
-        init(title : String, subtitle : String) {
-            self.title = title
-            self.subtitle = subtitle
-        }
-    }
-    
+
     // MARK: - Properties
-    var items : [ViewModel] = [] {
+    var items : [CellViewModel] = [] {
         didSet {
             self.tableView.reloadData()
         }
@@ -27,7 +18,7 @@ class ViewControllerAddDelete: UITableViewController {
     
     // MARK: IBActions
     @IBAction func addItem(_ sender: UIBarButtonItem) {
-        items.append(ViewModel(title: "Title",
+        items.append(CellViewModel(title: "Title",
                                subtitle: UUID().uuidString))
     }
     

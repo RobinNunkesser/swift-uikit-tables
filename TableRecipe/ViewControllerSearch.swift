@@ -5,29 +5,12 @@ import Foundation
 import UIKit
 
 class ViewControllerSearch: UITableViewController, UISearchBarDelegate {
-    
-    // MARK: - Types
-    
-    class ViewModel : NSObject {
         
-        @objc dynamic let title : String
-        let subtitle : String
-        
-        init(title : String, subtitle : String) {
-            self.title = title
-            self.subtitle = subtitle
-        }
-        
-    }
-    
     // MARK: - Properties
     
-    var items : [ViewModel] = [ViewModel(title:"Title 1",
-                                         subtitle:"Subtitle 1"),
-                               ViewModel(title:"Title 2",
-                                         subtitle:"Subtitle 2")]
-    
-    var filteredItems : [ViewModel] = [] {
+    var items = mockItems
+        
+    var filteredItems : [CellViewModel] = [] {
         didSet {
             self.tableView.reloadData()
         }

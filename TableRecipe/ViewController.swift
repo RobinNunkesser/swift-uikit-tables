@@ -4,25 +4,10 @@
 import UIKit
 
 class ViewController: UITableViewController {
-
-    // MARK: - Types
-    
-    struct ViewModel {
-        let title : String
-        let subtitle : String
-        
-        init(title : String, subtitle : String) {
-            self.title = title
-            self.subtitle = subtitle
-        }
-    }
     
     // MARK: - Properties
     
-    var items : [ViewModel] = [ViewModel(title:"Title 1",
-                                         subtitle:"Subtitle 1"),
-                               ViewModel(title:"Title 2",
-                                         subtitle:"Subtitle 2")]
+    var items = mockItems
     
     // MARK: - Methods
     // MARK: Lifecycle
