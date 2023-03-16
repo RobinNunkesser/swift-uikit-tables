@@ -235,10 +235,10 @@
             </objects>
             <point key="canvasLocation" x="2327" y="1164"/>
         </scene>
-        <!--Table View Controller-->
+        <!--View Controller Reorder-->
         <scene sceneID="4jr-xG-Rkh">
             <objects>
-                <tableViewController id="R4H-ow-blj" sceneMemberID="viewController">
+                <tableViewController id="R4H-ow-blj" customClass="ViewControllerReorder" customModule="TableRecipe" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="NVf-gB-oCD">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -274,7 +274,9 @@
                             <outlet property="delegate" destination="R4H-ow-blj" id="kxO-8g-G2U"/>
                         </connections>
                     </tableView>
+                    <toolbarItems/>
                     <navigationItem key="navigationItem" id="Y9O-3t-Ig9"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DbD-68-M1V" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

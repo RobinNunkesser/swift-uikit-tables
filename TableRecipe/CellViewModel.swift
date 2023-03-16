@@ -18,4 +18,8 @@ class CellViewModel : NSObject {
         self.subtitle = subtitle
     }
     
+    override var description: String {
+        return "Title: \(title), Subtitle: \(subtitle)"
+    }
+    
 }
